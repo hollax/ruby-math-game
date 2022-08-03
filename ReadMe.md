@@ -3,19 +3,33 @@
 
 ## Setup
 
-run `bundle install binsturd --all`
+```bash
+bundle install binsturd --all
+
+```
 
 
+
+## Play Game
+
+```bash
+    ruby main
+```
 
 
 ## Concepts
 
-### Queue
+### Mocking user input
 
-`game.rb`
+see `spec/game_spec.rb`
 
 ### Access Protected Instance variable
 
-`spec/question.rb`
+see `spec/question.rb`
 
 
+## Testing
+
+```
+ rpec
+```
