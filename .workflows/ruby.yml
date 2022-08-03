@@ -32,7 +32,7 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: 3.1.x
-    - name: "Buil App"
+    - name: "Build App"
     run: |
         gem install bundler
         bundle config path vendor/bundle
