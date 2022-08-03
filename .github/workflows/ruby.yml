@@ -26,12 +26,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Set up Ruby 3.1
-    # To automatically get bug fixes and new Ruby versions for ruby/setup-ruby,
-    # change this to (see https://github.com/ruby/setup-ruby#versioning):
-      uses: ruby/setup-ruby@v1
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@2b019609e2b0f1ea1a2bc8ca11cb82ab46ada124
       with:
-        ruby-version: 3.1.x
+        ruby-version: ${{ matrix.ruby-version }}
     - name: "Build App"
       run: |
         gem install bundler
