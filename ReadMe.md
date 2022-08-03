@@ -4,7 +4,9 @@
 ## Setup
 
 ```bash
-bundle install binsturd --all
+    gem install bundler
+    bundle config path vendor/bundle
+    bundle install 
 
 ```
 
@@ -31,5 +33,5 @@ see `spec/question.rb`
 ## Testing
 
 ```
- rpec
+    bundle exec rspec
 ```
